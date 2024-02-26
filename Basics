@@ -1,0 +1,65 @@
+Hello, This file content is originated from a Online course from youtube which is striver dsa, dsa sheet with 455 problems.
+This is the first basic learnings that I took with me from the course.
+It will be a straight forward hints with out any special explanation.
+It will be associated with each program Iam solving.
+Iam taking my first steps so do not laugh at me !
+
+Language Used: C++
+Basics: 
+-----------------------------------------------------------------------
+P1: User Input and Output 
+ -The input arguments datatype be of different in each new testcase ,
+  if that is so the input parameter datatype assigned in the function
+  definition is advised to be char/str 
+- TO FIND whether it is a alphabet use 
+  if( ch>='A' && ch<= 'Z')
+  if( ch>='a' && ch<= 'z')
+  this will find whether the alphabet is between 'A','B';'a','b'.
+-----------------------------------------------------------------------
+P2: Data Types
+- If the main function passes the input to the called function or 
+  the called function has a default input value in its parameter 
+  just use return statement , do not use cin and cout.
+-----------------------------------------------------------------------
+P3: If else statments
+-----------------------------------------------------------------------
+P4: Switch statements
+- Common syntax
+  Pi value to find area of a circle consider 10 significant digits.
+  Pi= 3.141592653
+-----------------------------------------------------------------------
+P5: Arrays and Strings
+- concept of how array works 
+-----------------------------------------------------------------------
+P6: For loops 
+- Fibonacci logic 
+* int fib(n)
+    return fib(n-1)+fib(n-2);
+* a,b=0,1
+  for _ in range(2,n+1)
+    a,b=b,a+b
+  return b
+Key learnings:
+* ALways declare the sub function above the main function to 
+  indicate the existence of the function to the compiler.
+* Define function after the main function for the implementation.
+* Do not write declaration and definition inside main()
+-----------------------------------------------------------------------
+P7: While loops
+- Q: a number will be given, to find the sum of even digits in
+  the given number and sum of odd digits of the same given number.
+  logic used:
+   x=n%10
+   n=n/10
+-----------------------------------------------------------------------
+P8: Functions ( Pass by reference and value )
+* Void functions do not return anything, it will give errors if you are 
+  giving a retunr statement.
+* Arguments passed will have a different varible name than that of the sub
+  function's parameter variable name.
+* Always use parameter of the sub function to perform actions inside the
+  sub function
+-----------------------------------------------------------------------
+P9: Time complexity concept
+
+
