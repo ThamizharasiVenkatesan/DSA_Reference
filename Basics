@@ -61,5 +61,95 @@ P8: Functions ( Pass by reference and value )
   sub function
 -----------------------------------------------------------------------
 P9: Time complexity concept
+******* Time Complexity != Time taken *******
+Time Taken is the amount of time taken to run the program which is not the
+time complexity of the program.
+
+Time complexity is : The rate at which the time taken increases with respect
+to the input size.
+
+Big Oh O() notation - Worst case scenario
+*  Always give Time complexity of worst case scenario for further scale up.
+*  Avoid constants as it is not significant so neglect them.
+* Avoid lower values and only take the first value as it also not significant.
+
+- Big Oh O() - Upper bound, worst case 
+- Theta 0 - Average complexity
+- Omega - Lowest complexity
+
+Time Complexity of nested loops 
+N x N time complexity O(N²)
+
+eg: for( int i=0; i<=N; i++)
+       for ( int j=0; j<=N; j++)
+             code
+
+i th loop runs for N times, j th loop runs for N times which is N x N
+O(N²)
+
+eg: for( int i=0; i<= N; i++)
+       for( int j=0; j<=i; j++)
+            code
+
+i th loop runs for N times , j th loop runs for i times which is N(N+1)/2
+N²/2 + N/2
+Neglect lower values , constants , we will be left with N²
+O(N²)
+
+P9: Space complexity
+**********Memory Space***********
+Big O - Worst case
+
+Auxillary Space + Input Space 
+(Space to solve) (Space to store)
+
+* Never manipulate the input variables 
+
+a,b //inputs
+b=a+b // changes the input variable value which is not accepted
+for MNC.
+Take extra variable and it is fine.
+
+""" Code 
+ -> Sent to server 
+ -> Competitve programming
+ -> Most of the servers take 
+      1s ~ 10⁸
+      2s ~ 2 x 10⁸
+      5s ~ 5 x 10⁸
+
+Time limit 1s = 10⁸ operations
+Roughly  TC = O( 10⁸ ) which is O(1).
+-----------------------------------------------------------------------
+P10: Patterns [ Service based company alone]
+Uses loops , DSA 
+Four steps:
+[Nested loops], [Outer loops,rows], [inner loops,cols]
+1) Outer loops, count the no. of lines
+2) For inner loop, focus on columns, connect them to rows
+3) Whatever you print, print them inside inner loop
+4) Observe symmetry (optional)
+
+eg:
+* * * *
+* * * *
+* * * *
+* * * *
+i)    * * *    i<n
+      * * *    j<n
+      * * *
+ii)   *        i<n
+      * *      j<=i
+      * * *
+iii)  1        i<=n
+      1 2      j<=i
+      1 2 3    //give space separately in print statement, print j
+iv)   1     
+      2 2
+      3 3 3    //print row number , cout << i
+v)    
+
+
+
 
 
