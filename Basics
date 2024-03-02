@@ -147,8 +147,29 @@ iii)  1        i<=n
 iv)   1     
       2 2
       3 3 3    //print row number , cout << i
-v)    
-
+v)    * * *
+      * *      i<n
+      *        j<n-i
+vi)   1 2 3    i=0;i<n
+      1 2      j=1; j<=n-1
+      1        cout<<j
+vii)       *           i<n ; space: j<(n-i)-1
+         * * *         star: j<(2*i)-1
+       * * * * *       space: j<(n-i)-1
+viii)  * * * * *       i<n; space j<i
+         * * *         star: 2n-(2i+1)
+           *           space j<1
+ix)        *
+         * * *
+       * * * * *
+       * * * * *
+         * * * 
+           *      //combine both
+x)         *
+           * *
+           * * *    use ii, then i<n-1
+           * *      star j<n-i-1
+           *        space j<n-i-2
 
 
 
